@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const program = require('commander');
+const cli = require('..')
+
+program
+  .version(require('../package.json').version)
+  .description('Resolve weex exception stack')
+  .option('-m, --main <path>', 'the absolute path for main.js.map')
+  .option('-b, --bundle <path>', 'the absolute path for bundle.js.map')
+  .option('-s, --stack <exception stack>', 'the exception stack to resolve')
+
+program.on('--help', function() {
+  console.log('  Examples:');
+  console.log('');
+  console.log('    $exception-resolver -m ~/main.js.map -b ~/bundle.js.map -s \"mo is not defined\\n at (weex):4:18890\"')
+  console.log('');
+});
+
+program
+  .parse(process.argv)
+
+program
+  .action(cli.resolve(program.main, program.bundle, program.stack))
+
+if (program.rawArgs.length == 2) {
+  program.help()
+}

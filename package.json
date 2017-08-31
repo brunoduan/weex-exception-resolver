@@ -1,0 +1,30 @@
+{
+  "name": "weex-exception-resolver",
+  "version": "0.1.0",
+  "description": "Resolve the exception stack with v8 formated from weex through [source-map](https://github.com/mozilla/source-map).",
+  "main": "index.js",
+  "bin": "bin/weex-exception-resolver",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brunoduan/weex-exception-resolver.git"
+  },
+  "homepage": "https://github.com/brunoduan/weex-exception-resolver",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "path-loader": "^1.0.1",
+    "source-map": "^0.5.7",
+    "stack-frame": "^0.4.0"
+  },
+  "keywords": [
+    "weex",
+    "exception",
+    "stack frame"
+  ],
+  "author": {
+    "name": "Bruno Duan",
+    "email": "bruno.duan@gmail.com"
+  },
+  "license": "MIT"
+}
