@@ -28,7 +28,7 @@ The exception above is a line-break-separated String, take a look at the followi
 ## Features
 
 - Support v8-formated js stack
-- TODO: jsc-formated js stack
+- Support jsc-formated js stack
 
 ## License
 
