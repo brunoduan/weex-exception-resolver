@@ -1,6 +1,6 @@
 {
   "name": "weex-exception-resolver",
-  "version": "0.1.2",
+  "version": "0.1.12",
   "description": "Resolve the exception stack with v8 formated from weex through [source-map](https://github.com/mozilla/source-map).",
   "main": "index.js",
   "bin": "bin/weex-exception-resolver",
