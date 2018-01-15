@@ -4,8 +4,7 @@
   "description": "Resolve the exception stack with v8 formated from weex through [source-map](https://github.com/mozilla/source-map).",
   "main": "index.js",
   "bin": "bin/weex-exception-resolver",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/brunoduan/weex-exception-resolver.git"
@@ -14,6 +13,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "path-loader": "^1.0.1",
+    "shelljs": "^0.7.8",
     "source-map": "^0.5.7",
     "stack-frame": "^0.4.0"
   },
@@ -23,8 +23,13 @@
     "stack frame"
   ],
   "author": {
-    "name": "Bruno Duan",
-    "email": "bruno.duan@gmail.com"
+    "name": "Bruno Duan, Chileung Kwan",
+    "email": "bruno.duan@gmail.com, kwanchileung4816@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
 }
